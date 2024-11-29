@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unoeste.fipp.pedidosfx.MenuController">
+    <stylesheets>
+        <URL value="@styles/style.css" />
+    </stylesheets>
+
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="_CADASTRO">
+                    <items>
+                        <MenuItem onAction="#onCadProduto" text="_PRODUTO..." />
+                        <MenuItem onAction="#onCadCategoria" text="_CATEGORIA..." />
+                        <MenuItem onAction="#onNovoTipoPag" text="_TIPO PAGAMENTO..." />
+                        <MenuItem onAction="#onCadEmpresa" text="EMPRESA" />
+                        <SeparatorMenuItem />
+                        <MenuItem onAction="#onSair" text="_SAIR" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="_PEDIDO">
+                    <items>
+                        <MenuItem onAction="#onNovoPedido" text="NOVO..." />
+                        <MenuItem onAction="#onAbrirPedido" text="ABRIR..." />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="_RELATÓRIO">
+                    <items>
+                        <Menu text="BÁSICO">
+                            <items>
+                                <MenuItem onAction="#onRelProduto" text="RELAÇÃO DE PRODUTOS" />
+                            </items>
+                        </Menu>
+                        <Menu text="AVANÇADO">
+                            <items>
+                                <MenuItem onAction="#onRelPedidosPeriodo" text="PEDIDOS POR PERÍODO" />
+                                <MenuItem onAction="#onRelCardapio" text="CARDÁPIO" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="_AJUDA">
+                    <items>
+                        <MenuItem onAction="#onSobre" text="SOBRE" />
+                        <MenuItem onAction="#onHelp" text="FAISKA BURGUER HELP" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <StackPane style="-fx-background-size: cover; -fx-background-position: center;">
+            <children>
+                <ImageView fitHeight="403.0" fitWidth="412.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </StackPane>
+
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" prefHeight="45.0" style="-fx-background-color: #f37200;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Faiska Burguer System" textFill="WHITE">
+                    <font>
+                        <Font name="Tahoma Bold" size="16.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+            </padding>
+        </HBox>
+    </bottom>
+</BorderPane>

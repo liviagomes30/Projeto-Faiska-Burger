@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unoeste.fipp.pedidosfx.TabelaProdutosController">
+    <stylesheets>
+        <URL value="@styles/style.css" />
+    </stylesheets>
+    <children>
+        <HBox alignment="CENTER" prefHeight="65.0" spacing="20.0" style="-fx-background-color: #FF7F50;">
+            <children>
+                <TextField fx:id="tfPesquisar" onKeyReleased="#onPesquisar" prefHeight="30.0" prefWidth="650.0" promptText="Buscar por nome do produto" />
+                <Button mnemonicParsing="false" onAction="#onNovoProduto" style="-fx-background-color: #6aa84f; -fx-text-fill: white;" text="Novo Produto" />
+            </children>
+        </HBox>
+        <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="coNome" text="NOME" prefWidth="300" />
+                <TableColumn fx:id="coValor" text="VALOR" prefWidth="100" />
+                <TableColumn fx:id="coCategoria" text="CATEGORIA" prefWidth="200" />
+            </columns>
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem onAction="#onEditar" text="Editar" />
+                        <MenuItem onAction="#onApagar" text="Apagar" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </TableView>
+    </children>
+</VBox>

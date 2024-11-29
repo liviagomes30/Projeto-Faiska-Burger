@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unoeste.fipp.pedidosfx.TabelaCategoriasController" stylesheets="@style.css">
+    <stylesheets>
+        <URL value="@styles/style.css" />
+    </stylesheets>
+    <children>
+        <HBox alignment="CENTER" prefHeight="65.0" spacing="20.0" style="-fx-background-color: #FF7F50;">
+            <children>
+                <TextField fx:id="tfPesquisar" onKeyReleased="#onPesquisar" styleClass="text-field" promptText="Buscar por nome da categoria" />
+                <Button mnemonicParsing="false" onAction="#onNovaCategoria" styleClass="button" text="Nova Categoria" />
+            </children>
+        </HBox>
+        <TableView fx:id="tableView" VBox.vgrow="ALWAYS" styleClass="table-view">
+            <columns>
+                <TableColumn fx:id="coNome" prefWidth="300" text="NOME" styleClass="table-column"/>
+            </columns>
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem onAction="#onEditar" styleClass="menu-item" text="Editar" />
+                        <MenuItem onAction="#onApagar" styleClass="menu-item" text="Apagar" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </TableView>
+    </children>
+</VBox>

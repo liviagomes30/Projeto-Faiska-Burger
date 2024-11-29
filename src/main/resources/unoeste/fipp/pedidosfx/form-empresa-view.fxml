@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="1000.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unoeste.fipp.pedidosfx.FormEmpresaController" style="-fx-background-color: #f4f4f4;">
+    <children>
+        <Label text="ID" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfId" editable="false" style="-fx-background-color: #e0e0e0;" />
+
+        <Label text="CNPJ" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfCnpj" />
+
+        <Label text="Razão Social" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfRazaoSocial" />
+
+        <Label text="Nome Fantasia" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfNomeFantasia" />
+
+        <Label text="Endereço" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfRua" />
+
+        <Label text="Número" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfNumero" />
+
+        <Label text="Bairro" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfBairro" />
+
+        <Label text="Cidade" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfCidade" />
+
+        <Label text="UF" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfUf" />
+
+        <Label text="CEP" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfCep" />
+
+        <Label text="Telefone" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfTelefone" />
+
+        <Label text="Email" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfEmail" />
+
+        <Label text="Valor da Embalagem" style="-fx-font-weight: bold;">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="tfValorEmbalagem" />
+
+        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0" spacing="20.0">
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+            <children>
+                <Button fx:id="btnConfirmar" mnemonicParsing="false" onAction="#onAlterar" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #4CAF50; -fx-font-weight: bold;" text="Confirmar" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#onCancelar" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #F44336; -fx-font-weight: bold;" text="Cancelar" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

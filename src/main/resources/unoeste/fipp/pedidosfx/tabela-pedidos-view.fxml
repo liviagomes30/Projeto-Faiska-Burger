@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unoeste.fipp.pedidosfx.TabelaPedidosController">
+    <stylesheets>
+        <URL value="@styles/style.css" />
+    </stylesheets>
+    <children>
+        <HBox alignment="CENTER" prefHeight="65.0" spacing="20.0" style="-fx-background-color: #FF7F50;">
+            <children>
+                <TextField fx:id="tfPesquisar" onKeyReleased="#onPesquisar" prefHeight="30.0" prefWidth="650.0" promptText="Buscar por nome do cliente" />
+                <Button mnemonicParsing="false" onAction="#onNovoPedido" style="-fx-background-color: #6aa84f; -fx-text-fill: white;" text="Novo Pedido" />
+            </children>
+        </HBox>
+        <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="coData" prefWidth="100.0" text="DATA" />
+                <TableColumn fx:id="coCliente" prefWidth="200.0" text="CLIENTE" />
+                <TableColumn fx:id="coTotal" prefWidth="100.0" text="TOTAL" />
+            </columns>
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem onAction="#onEditar" text="Editar" />
+                        <MenuItem onAction="#onApagar" text="Apagar" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </TableView>
+    </children>
+</VBox>

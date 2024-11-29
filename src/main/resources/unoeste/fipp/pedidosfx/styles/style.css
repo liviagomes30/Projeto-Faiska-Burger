@@ -1,0 +1,87 @@
+/* Estilos Gerais do Menu */
+.menu-bar {
+  -fx-background-color: #db7318; /* Tom suave de bege para o fundo da barra de menu */
+  -fx-font-size: 14px;
+  -fx-font-family: "Roboto", sans-serif; /* Fonte mais limpa e moderna */
+  -fx-padding: 5px 10px;
+}
+
+/* Estilo dos Menus */
+.menu {
+  -fx-background-color: #ee984d; /* Fundo transparente */
+  -fx-padding: 8px 15px;
+  -fx-border-radius: 20px; /* Borda arredondada no menu */
+}
+
+/* Estilo dos Itens do Menu */
+.menu-item {
+  -fx-background-color: transparent; /* Fundo transparente */
+  -fx-padding: 8px 15px; /* Distância confortável */
+  -fx-border-radius: 10px; /* Bordas arredondadas */
+  -fx-font-weight: normal; /* Remover o negrito */
+  -fx-font-size: 13px; /* Fonte mais discreta */
+  -fx-transition: background-color 0.2s ease-in-out,
+    -fx-text-fill 0.2s ease-in-out; /* Transição suave */
+}
+
+/* Item do Menu Selecionado (quando ativo ou focado) */
+.menu-item:focused {
+  -fx-background-color: #f1a87a; /* Cor de fundo para quando o item está focado */
+}
+
+/* Separador de Itens de Menu (linha divisória) */
+.separator-menu-item {
+  -fx-background-color: #f1d0a7; /* Cor para o separador */
+}
+/* Estilo da Barra Superior (TopBar) */
+.menu-bar {
+  -fx-background-color: #db7318; /* Tom suave e claro */
+  -fx-font-size: 14px;
+  -fx-font-family: "Roboto", sans-serif; /* Fonte sem serifa para clareza */
+  -fx-padding: 5px 10px;
+}
+
+/* Estilo do Rodapé (Bottom) */
+.hbox-footer {
+  -fx-background-color: #db7318; /* Cor laranja vibrante, mas sem ser tão agressiva */
+  -fx-padding: 10px 30px;
+  -fx-border-radius: 0 0 10px 10px; /* Bordas arredondadas para o rodapé */
+}
+
+/* Estilo dos Botões */
+.button {
+  -fx-background-color: #2e8b57; 
+  -fx-text-fill: white;
+  -fx-font-family: "Poppins", sans-serif;
+  -fx-font-weight: bold;
+  -fx-padding: 10px 20px;
+  -fx-border-radius: 8px;
+}
+
+.text-field:focused,
+.text-area:focused {
+  -fx-border-color: #db7318;
+  -fx-background-color: #f9f9f9;
+}
+
+/* Estilo dos TextFields */
+.text-field {
+    -fx-pref-height: 30px;
+    -fx-pref-width: 650px;
+    -fx-prompt-text-fill: #888;
+    -fx-font-size: 14px;
+}
+
+/* Estilo da TableView */
+.table-view {
+    -fx-pref-height: 400px;
+    -fx-font-size: 14px;
+    -fx-border-width: 1px;
+    -fx-border-color: #d3d3d3;
+}
+
+/* Estilo das colunas da TableView */
+.table-column {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}

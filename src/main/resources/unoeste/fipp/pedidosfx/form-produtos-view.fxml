@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<?import java.net.URL?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unoeste.fipp.pedidosfx.FormProdutosController">
+
+   <children>
+      <Label text="ID">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="tfId" editable="false" />
+      <Label layoutX="10.0" layoutY="10.0" text="Nome">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="tfNome" layoutX="10.0" layoutY="27.0" />
+      <Label layoutX="10.0" layoutY="52.0" text="Descrição">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Label>
+      <TextArea fx:id="taDesc" prefHeight="95.0" prefWidth="640.0" />
+      <Label text="Valor">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="tfValor">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TextField>
+      <Label text="Categoria">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Label>
+      <ComboBox fx:id="cbCategoria" prefWidth="640.0" />
+      <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0" spacing="30.0">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onConfirmar" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #2e8b57;" text="Confirmar" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onCancelar" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ff5232;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
