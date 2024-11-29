@@ -84,16 +84,16 @@ public class MenuController implements Initializable {
 
     public void onSobre(ActionEvent actionEvent) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText("Faiska Burguer System");
+        alert.setHeaderText("Faiska Burger System");
         alert.setContentText("Desenvolvido por FIPP Sistemas\n2024");
         alert.show();
     }
 
     public void onHelp(ActionEvent actionEvent) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText("Ajuda - Faiska Burguer System");
+        alert.setHeaderText("Ajuda - Faiska Burger System");
         alert.setContentText("Para suporte técnico, entre em contato:\n\n" +
-                "Email: suporte@faiskaburguer.com\n" +
+                "Email: suporte@faiskaBurger.com\n" +
                 "Telefone: (11) 99999-9999\n\n" +
                 "Horário de atendimento: Segunda a Sexta, das 9h às 18h.");
         alert.show();

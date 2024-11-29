@@ -83,7 +83,7 @@
     <bottom>
         <HBox alignment="CENTER_RIGHT" prefHeight="45.0" style="-fx-background-color: #f37200;" BorderPane.alignment="CENTER">
             <children>
-                <Label text="Faiska Burguer System" textFill="WHITE">
+                <Label text="Faiska Burger System" textFill="WHITE">
                     <font>
                         <Font name="Tahoma Bold" size="16.0" />
                     </font>

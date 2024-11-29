@@ -15,7 +15,7 @@ public class PedidosFX extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(PedidosFX.class.getResource("menu-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 900, 600);
-        stage.setTitle("Faiska Burguer Menu");
+        stage.setTitle("Faiska Burger Menu");
         stage.setScene(scene);
         stage.show();
     }
